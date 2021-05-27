@@ -1,3 +1,44 @@
+let codes = {
+	"AN":"Andaman and Nicobar Islands",
+    "AP":"Andhra Pradesh",
+    "AR":"Arunachal Pradesh",
+    "AS":"Assam",
+    "BR":"Bihar",
+    "CG":"Chandigarh",
+    "CH":"Chhattisgarh",
+    "DN":"Dadra and Nagar Haveli",
+    "DD":"Daman and Diu",
+    "DL":"Delhi",
+    "GA":"Goa",
+    "GJ":"Gujarat",
+    "HR":"Haryana",
+    "HP":"Himachal Pradesh",
+    "JK":"Jammu and Kashmir",
+    "JH":"Jharkhand",
+    "KA":"Karnataka",
+    "KL":"Kerala",
+    "LA":"Ladakh",
+    "LD":"Lakshadweep",
+    "MP":"Madhya Pradesh",
+    "MH":"Maharashtra",
+    "MN":"Manipur",
+    "ML":"Meghalaya",
+    "MZ":"Mizoram",
+    "NL":"Nagaland",
+    "OR":"Odisha",
+    "PY":"Puducherry",
+    "PB":"Punjab",
+    "RJ":"Rajasthan",
+    "SK":"Sikkim",
+    "TN":"Tamil Nadu",
+    "TS":"Telangana",
+    "TR":"Tripura",
+    "UP":"Uttar Pradesh",
+    "UK":"Uttarakhand",
+    "WB":"West Bengal"
+};
+
+
 let covid = {
 	getstateData: function() {
 		fetch("https://api.covid19india.org/v4/min/data.min.json")
@@ -73,46 +114,6 @@ let covid = {
 
 	displayHeadSearch: function(data) {
 		const value = document.querySelector(".text").value;
-		let codes = {
-			"AN":"Andaman and Nicobar Islands",
-		    "AP":"Andhra Pradesh",
-		    "AR":"Arunachal Pradesh",
-		    "AS":"Assam",
-		    "BR":"Bihar",
-		    "CG":"Chandigarh",
-		    "CH":"Chhattisgarh",
-		    "DN":"Dadra and Nagar Haveli",
-		    "DD":"Daman and Diu",
-		    "DL":"Delhi",
-		    "GA":"Goa",
-		    "GJ":"Gujarat",
-		    "HR":"Haryana",
-		    "HP":"Himachal Pradesh",
-		    "JK":"Jammu and Kashmir",
-		    "JH":"Jharkhand",
-		    "KA":"Karnataka",
-		    "KL":"Kerala",
-		    "LA":"Ladakh",
-		    "LD":"Lakshadweep",
-		    "MP":"Madhya Pradesh",
-		    "MH":"Maharashtra",
-		    "MN":"Manipur",
-		    "ML":"Meghalaya",
-		    "MZ":"Mizoram",
-		    "NL":"Nagaland",
-		    "OR":"Odisha",
-		    "PY":"Puducherry",
-		    "PB":"Punjab",
-		    "RJ":"Rajasthan",
-		    "SK":"Sikkim",
-		    "TN":"Tamil Nadu",
-		    "TS":"Telangana",
-		    "TR":"Tripura",
-		    "UP":"Uttar Pradesh",
-		    "UK":"Uttarakhand",
-		    "WB":"West Bengal"
-		};
-
 		let check = 0;
 		
 		if (value === "India" || value === "india") {
@@ -164,46 +165,6 @@ let covid = {
 
 let addTableData = {
 	createAndAdd: function(data, date) {
-		let codes = {
-			"AN":"Andaman and Nicobar Islands",
-		    "AP":"Andhra Pradesh",
-		    "AR":"Arunachal Pradesh",
-		    "AS":"Assam",
-		    "BR":"Bihar",
-		    "CG":"Chandigarh",
-		    "CH":"Chhattisgarh",
-		    "DN":"Dadra and Nagar Haveli",
-		    "DD":"Daman and Diu",
-		    "DL":"Delhi",
-		    "GA":"Goa",
-		    "GJ":"Gujarat",
-		    "HR":"Haryana",
-		    "HP":"Himachal Pradesh",
-		    "JK":"Jammu and Kashmir",
-		    "JH":"Jharkhand",
-		    "KA":"Karnataka",
-		    "KL":"Kerala",
-		    "LA":"Ladakh",
-		    "LD":"Lakshadweep",
-		    "MP":"Madhya Pradesh",
-		    "MH":"Maharashtra",
-		    "MN":"Manipur",
-		    "ML":"Meghalaya",
-		    "MZ":"Mizoram",
-		    "NL":"Nagaland",
-		    "OR":"Odisha",
-		    "PY":"Puducherry",
-		    "PB":"Punjab",
-		    "RJ":"Rajasthan",
-		    "SK":"Sikkim",
-		    "TN":"Tamil Nadu",
-		    "TS":"Telangana",
-		    "TR":"Tripura",
-		    "UP":"Uttar Pradesh",
-		    "UK":"Uttarakhand",
-		    "WB":"West Bengal"
-		};
-
 		let shadow = false;
 
 		for (let key in data) {
