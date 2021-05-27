@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Covid19 India</title>
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<script src="https://kit.fontawesome.com/5841526032.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<section>
+		<div class="logo">
+			<div class="covid19">C<i class="fas fa-virus"></i>vid 19</div>
+			<div class="India">India</div>
+		</div>
+
+		<div class="head">
+			<div class="Search">
+				<div class="searchText">Search your state</div>
+				<div class="searchBar">
+					<i class="fas fa-search"></i>
+					<input type="text" name="place" id="placeholder" class="text"></input>
+					<button onclick="covid.searchInputData()">Submit</button>
+				</div>
+			</div>
+			<div class="indiaData">
+				<div class="placeIndia">
+					<h1>India</h1>
+				</div>
+				<div class="placeValues">
+					<h5>Tested</h5>
+					<h2 id="test">33,25,94,176</h2>
+					<h5 id="last_updated">As of 24 May</h5>
+				</div>
+			</div>
+			</div>
+	</section>
+
+	<section class="mainBars">
+		<div class="Place"><i class="fas fa-map-marker-alt"></i>India</div>
+		<div class="PlaceData">
+			<div class="cardC">
+				<div class="cardData">Confirmed</div>
+				<div class="cardValue" id="Confirmed">2,69,48,826</div>
+			</div>
+			<div class="cardA">
+				<div class="cardData">Active</div>
+				<div class="cardValue" id="Active">24,90,876</div>
+			</div>
+			<div class="cardR">
+				<div class="cardData">Recovered</div>
+				<div class="cardValue" id="Recovered">2,43,43,299</div>
+			</div>
+			<div class="cardD">
+				<div class="cardData">Decreased</div>
+				<div class="cardValue" id="Decreased">3,11,421</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="vaccinatedData">
+		<i class="fas fa-syringe"></i>&nbsp;&nbsp;<div class="vaccineDataValue" id="Vaccinated">19,85,38,999</div>&nbsp;&nbsp;vaccine doses administered
+	</div>
+
+	<section class="dataTable">
+		<div class="table">
+			<div class="tableHeadings">
+				<div class="tableHead">State/UT</div>
+				<div class="tableHead">Confirmed</div>
+				<div class="tableHead">Active</div>
+				<div class="tableHead">Recovered</div>
+				<div class="tableHead">Decreased</div>
+				<div class="tableHead">Vaccinated</div>
+				<div class="tableHead">Tested</div>
+			</div>
+		</div>
+		<div class="indiapic">
+			<img src="./assets/india.png">
+		</div>
+	</section>
+
+	<footer>
+		<h1>Covid19India</h1>
+		<h6>I stand with everyone fighting on the frontlines</h6>
+		<div class="contacts">
+			<div class="button"><a href="https://github.com/aditya-sarawat" target="_blank"><i class="fab fa-github"></i></a></div>
+			<div class="button"><a href="https://www.linkedin.com/in/aditya-sarawat/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+			<div class="button"><a href="https://www.instagram.com/aditya_sarawat/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+			<div class="button"><a href="https://twitter.com/SarawatAditya" target="_blank"><i class="fab fa-twitter"></i></a></div>
+		</div>
+		<div class="copyright">2021 © Aditya Sarawat</div>
+	</footer>
+</body>
+<script type="text/javascript" src="./assets/main.js"></script>
+<script type="text/javascript" src="./assets/animinate.js"></script>
+</html>
