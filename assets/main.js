@@ -204,11 +204,16 @@ let addTableData = {
 		    "WB":"West Bengal"
 		};
 
+		let shadow = false;
+
 		for (let key in data) {
 			if (codes[key] === undefined) { continue; }
 
 			const tableVal = document.createElement("div");
 			tableVal.classList.add("tableValues");
+			if(shadow == true) {
+				tableVal.classList.add("shadow");
+			}
 
 			const state = document.createElement("div");
 			state.classList.add("tableHeadName");
@@ -242,6 +247,9 @@ let addTableData = {
 			tableVal.appendChild(tested);
 
 			document.querySelector(".table").appendChild(tableVal);
+
+			if (shadow == true) { shadow = false }
+			else { shadow = true}
 		}
 		return;
 	},
