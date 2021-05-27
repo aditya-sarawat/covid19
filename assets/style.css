@@ -319,7 +319,7 @@ input::placeholder {
 .indiapic {
 	position: absolute;
 	right: 30em;
-	top: 30em;
+	top: 12em;
 	width: 20%;
 	animation: indiaimg 200s ease infinite alternate;
 }
