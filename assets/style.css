@@ -15,6 +15,7 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+
 }
 
 .covid19 {
@@ -136,6 +137,7 @@ input::placeholder {
     background-color: #19435035;
     width: 120%;
     border-radius: 5px;
+    animation: text-shadow-drop-right 0.6s both;
 }
 
 .Place .fas {
@@ -146,7 +148,7 @@ input::placeholder {
 .PlaceData {
 	margin-top: 3em;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -154,13 +156,14 @@ input::placeholder {
 .cardA,
 .cardR,
 .cardD {
-	height: 14em;
-	width: 16em;
+	height: 12em;
+	width: 12em;
 	border-radius: 5px;
 	display: flex;
 	justify-content:center;
 	flex-direction:column;
 	text-align: center;
+	animation: text-shadow-drop-right 0.6s both;
 }
 
 .cardC {
@@ -220,13 +223,13 @@ input::placeholder {
 }
 
 .cardData {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 600;
 }
 
 .cardValue {
 	padding-top: 50px;
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 400;
 }
 
@@ -242,12 +245,13 @@ input::placeholder {
 .vaccinatedData {
 	margin: 3em auto;
 	padding: 1em;
-	background-color: #ce121250;
+	background-color: #ce121240;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	border-radius: 5px;
 	width:fit-content;
+	animation: text-shadow-drop-right 0.6s both;
 }
 
 .vaccinatedData,
@@ -257,25 +261,24 @@ input::placeholder {
 }
 
 .table {
-	margin-top: 5em;
-	margin-bottom: 3em;
+	margin: 5em 3em 3em;
 	padding: 2em;
 	display:flex;
 	justify-content:center;
 	flex-direction:column;
-	width:82%;
+	width:75%;
 	background: rgb(255 255 255 / 0.60);
     backdrop-filter: blur( 15px );
     -webkit-backdrop-filter: blur( 15px );
     border-radius: 10px;
-    border: 1px solid rgb(181 181 181 / 0.45);
     z-index: 1;
 }
 
 .tableHeadings,
 .tableValues {
+	margin: 2px;
 	height: 2em;
-	padding: 0.5em;
+    padding: 3px;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
@@ -292,8 +295,16 @@ input::placeholder {
 .tableHead {
     width: 100%;
     text-align:center;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
+}
+
+.tableHead {
+	font-size: 16px;
+}
+
+.shadow {
+	background-color: #54535120;
 }
 
 .tableValues:hover {
@@ -360,6 +371,16 @@ footer .button .fab {
 	font-size: 15px;
 	font-weight: 500;
 }
+
+@keyframes text-shadow-drop-right {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 6px 0 18px rgb(0 0 0 / 0.25);
+  }
+}
+
 
 @keyframes indiaimg {
 	0% { transform:translateY(0) }
