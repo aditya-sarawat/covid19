@@ -411,3 +411,57 @@ body::-webkit-scrollbar-track-piece:end {
 body::-webkit-scrollbar-track-piece:start {
     background: #54535160;
 }
+
+@media only screen and (max-device-width: 500px) {
+    body {
+    	margin: auto;
+    	padding: 10px;
+    	width: 80%;
+    }	
+
+	.head {
+        display:flex;
+        flex-direction:column;
+	}
+
+	.searchBar {
+		width: auto;
+	}
+
+	.indiaData {
+		margin-top: 30px;
+		width:100%;
+	}
+
+	.mainBars {
+		overflow-x:hidden;
+	}
+
+	.place {
+
+	}
+
+	.placeIndia {
+		margin: 0;
+	}
+
+	.PlaceData {
+		display:flex;
+		flex-direction:column;
+	}
+
+	.cardC,
+    .cardA,
+    .cardR,
+    .cardD {
+    	margin-top: 15px;
+    }
+
+    .cardC {
+    	margin-top: -10px;
+    }
+
+    .dataTable {
+    	display:none;
+    }
+}
