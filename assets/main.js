@@ -54,7 +54,7 @@ let covid = {
 		const { recovered } = data.TT.total;
 		const { tested } = data.TT.total;
 		const { vaccinated1 } = data.TT.total;
-		const { last_updated } = data.TT.meta.tested;
+		const { date } = data.TT.meta;
 		document.getElementById( "test" ).innerText = tested.toString().replace( /\B(?=(\d{3})+(?!\d))/g, "," );
 		document.getElementById( "Confirmed" ).innerText = confirmed.toString().replace( /\B(?=(\d{3})+(?!\d))/g, "," );
 		document.getElementById( "Decreased" ).innerText = deceased.toString().replace( /\B(?=(\d{3})+(?!\d))/g, "," );
@@ -64,8 +64,8 @@ let covid = {
 		let active = ( confirmed - recovered - deceased );
 		document.getElementById( "Active" ).innerText = active.toString().replace( /\B(?=(\d{3})+(?!\d))/g, "," );
 
-		let date = this.formatDate( last_updated );
-		document.getElementById( "last_updated" ).innerText = "As of " + date;
+		let date_now = this.formatDate( date );
+		document.getElementById( "last_updated" ).innerText = "As of " + date_now;
 		addTableData.createAndAdd( data, last_updated );
 	},
 
