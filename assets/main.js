@@ -41,7 +41,7 @@ let codes = {
 
 let covid = {
 	getstateData: function () {
-		fetch( "https://api.covid19india.org/v4/min/data.min.json" )
+		fetch( "https://data.covid19india.org/v4/min/data.min.json" )
 			.then( response => {
 				return response.json();
 			} )
@@ -105,7 +105,7 @@ let covid = {
 	},
 
 	searchInputData: function () {
-		fetch( "https://api.covid19india.org/v4/min/data.min.json" )
+		fetch( "https://data.covid19india.org/v4/min/data.min.json" )
 			.then( response => {
 				return response.json();
 			} )
